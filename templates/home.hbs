@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            overflow: hidden;
+            background-color: #0e1532;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .home-container {
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .logout-button {
+            background-color: #187bff;
+            color: #fff;
+            border: none;
+            padding: 14px 30px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+
+        .logout-button:hover {
+            background-color: #145b9c;
+        }
+        .attendance{
+    margin-top: 20px;
+    text-transform: capitalize;
+  }
+  .attendance-list{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: rgb(110, 109, 109);
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgb(110, 109, 109) ;
+  }
+  .table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 15px;
+    min-width: 100%;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+  }
+  table thead tr{
+    color: rgb(110, 109, 109);
+    background: #cd8c38;
+    text-align: left;
+    font-weight: bold;
+  }
+  .table th,
+  .table td{
+    padding: 12px 15px;
+  }
+  .table tbody tr{
+    border-bottom: 1px solid rgb(110, 109, 109);
+  }
+  .table tbody tr:nth-of-type(odd){
+    background: rgb(110, 109, 109);
+  }
+  .table tbody tr.active{
+    font-weight: bold;
+    color: #cd8c38;
+  }
+  .table tbody tr:last-of-type{
+    border-bottom: 2px solid #cd8c38;
+  }
+  .table button{
+    padding: 6px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #cd8c38;
+  }
+  .table button:hover{
+    background: #cd8c38;
+    color: rgb(110, 109, 109);
+    transition: 0.5rem;
+  }
+    </style>
+</head>
+<body>
+    <div class="home-container">
+        <h1>REVA Library</h1>
+        <p>"Unlock the world of knowledge with our library – where every page holds a new adventure."</p>
+        <section class="attendance">
+        <div class="attendance-list">
+          <h1>Top Students</h1>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Date</th>
+                <th>Rank</th>
+                <th>Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>R21EJ084</td>
+                <td>Suchithra</td>
+                <td>03-24-22</td>
+                <td>1</td>
+                <td><button>view details</button></td>
+              </tr>
+              <tr>
+                <td>R20EA009</td>
+                <td>Thanya Patel</td>
+                <td>03-24-22</td>
+                <td>2</td>
+                <td><button>View details</button></td>
+              </tr>
+              <tr>
+                <td>R19EJ054</td>
+                <td>Ananya GB</td>
+                <td>03-24-22</td>
+                <td>3</td>
+                <td><button>View details</button></td>
+              </tr>
+              <tr>
+                <td>R18EK064</td>
+                <td>Mohan Kumar</td>
+                <td>03-24-22</td>
+                <td>4</td>
+                <td><button>View details</button></td>
+              </tr>
+               <tr >
+                <td>R21EP097</td>
+                <td>Aman Gupta</td>
+                <td>03-24-22</td>
+                <td>5</td>
+                <td><button>View details</button></td>
+              </tr>
+        
+            </tbody>
+          </table>
+        </div>
+      </section>
+        <form action="/logout" method="get">
+            <button class="logout-button" type="submit">Logout</button>
+        </form>
+    </div>
+</body>
+</html>
